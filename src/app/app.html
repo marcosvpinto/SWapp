@@ -1,0 +1,25 @@
+<ion-menu [content]="content " class="sidebar">
+    <ion-content class="content">
+        <ion-list class="options" >
+            <a menuToggle (click)="openPagePeople()">
+                <ion-icon name="people"> </ion-icon> People</a>
+            <!--
+            <a menuToggle (click)="openPageFinanceiro()">
+                <ion-icon name="card">
+                </ion-icon> Financeiro</a>
+            <a menuToggle (click)="openPageLocalizacao()">
+                <ion-icon name="navigate">
+                </ion-icon> Localização</a>
+            <a menuToggle (click)="openPageMensagens()">
+                <ion-icon name="chatboxes">
+                </ion-icon> Mensagens</a>
+            <a menuToggle (click)="openPageTurmas()">
+                <ion-icon name="clipboard">
+                </ion-icon> Minhas Turmas</a>
+            <a menuToggle (click)="sair()">
+                <ion-icon name="exit"></ion-icon> Sair</a>
+            -->
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content></ion-nav>
