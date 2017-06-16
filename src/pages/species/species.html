@@ -1,5 +1,5 @@
 <!--
-  Generated template for the People page.
+  Generated template for the SpeciesPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,24 +7,25 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>People</ion-title>
+    <ion-title>Species</ion-title>
   </ion-navbar>
 
 </ion-header>
 
+
 <ion-content padding>
-  <ion-spinner [hidden]="!carregando"></ion-spinner>
+    <ion-spinner [hidden]="!carregando"></ion-spinner>
 
   <ion-card [hidden]="carregando">
     <ion-card-header>
-      People from SW
+      Species from SW
     </ion-card-header>
 
     <ion-card-content>
     <ion-list>
-      <button ion-item *ngFor="let person of people" (click)="goToDetailsPeople(person)">
-        <ion-icon name="people" item-left></ion-icon>
-        {{person.name}}
+      <button ion-item *ngFor="let specie of species" (click)="goToDetailsSpecies(specie)">
+        <ion-icon name="contacts" item-left></ion-icon>
+        {{specie.name}}
       </button>
     </ion-list>
     </ion-card-content>

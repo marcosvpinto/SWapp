@@ -1,12 +1,15 @@
 <ion-menu [content]="content " class="sidebar">
     <ion-content class="content">
         <ion-list class="options" >
+            <ion-item>
             <a menuToggle (click)="openPagePeople()">
                 <ion-icon name="people"> </ion-icon> People</a>
+            </ion-item>
+            <ion-item>
+            <a menuToggle (click)="openPageSpecies()">
+                <ion-icon name="contacts"> </ion-icon > Species</a>
+            </ion-item>
             <!--
-            <a menuToggle (click)="openPageFinanceiro()">
-                <ion-icon name="card">
-                </ion-icon> Financeiro</a>
             <a menuToggle (click)="openPageLocalizacao()">
                 <ion-icon name="navigate">
                 </ion-icon> Localização</a>

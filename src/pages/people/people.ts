@@ -16,9 +16,9 @@ import { PeopleService } from "../../providers/people-service";
 })
 export class People {
 
-  people;
+  private people;
 
-  loading = true;
+  private loading = true;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public peopleService: PeopleService) {
     
@@ -33,8 +33,9 @@ export class People {
     this.peopleService.load()
     .subscribe(data => {
       console.log(data);
-      this.people = data.results;
       this.loading = false;
+      this.people = data.results;
+      
     });
   }
 

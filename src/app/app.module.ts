@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { PeopleService } from "../providers/people-service";
 import { HttpModule } from '@angular/http';
+import { SpeciesServiceProvider } from '../providers/species-service/species-service';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     PeopleService, 
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    SpeciesServiceProvider
   ]
 })
 export class AppModule {}

@@ -24,5 +24,9 @@ export class MyApp {
   openPagePeople(){
     this.navCtrl.push('People');
   }
+
+  openPageSpecies(){
+    this.navCtrl.push('SpeciesPage');
+  }
 }
 
