@@ -1,3 +1,67 @@
 page-home {
+    
+}
 
+h1,h2,h3,h4,h5,h6 {
+  border-collapse: separate;
+  border-spacing: 16px 0;
+  border-spacing: 1rem 0;
+  color: #123;
+  display: table;
+  font-family: Merriweather;
+  font-size: 5em;
+  line-height: .25;
+  margin: 1em 0 .5em;
+  table-layout: auto;
+  text-align: center;
+  text-shadow: .0625em .0625em 0 rgba(0, 0, 0, .2);
+  white-space: nowrap;
+  width: 100%;
+}
+
+h1:before,h1:after,
+h2:before,h2:after,
+h3:before,h3:after,
+h4:before,h4:after,
+h5:before,h5:after,
+h6:before,h6:after {
+  border-top: 3px double #123;
+  content: '';
+  display: table-cell;
+  width: 50%;
+}
+
+h1:before,h1:after {
+  border-top-width: 6px;
+}
+
+h2 { font-size: 4em; }
+h2:before,h2:after {
+  border-top-style: solid;
+}
+
+h3 { font-size: 3em; }
+h3:before,h3:after {
+  border-top-style: dotted;
+}
+
+h4 { font-size: 2em; }
+h4:before,h4:after {
+  border-top-style: dashed;
+}
+
+h5 { font-size: 1.5em; }
+h5:before,h5:after {
+  border-top-color: CornflowerBlue;
+  border-top-style: groove;
+}
+
+h6 { font-size: 1.25em; }
+h6:before,h6:after {
+  border-top-color: Crimson;
+  border-top-style: ridge;
+}
+
+p {
+  text-align: center;
 }

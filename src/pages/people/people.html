@@ -24,7 +24,7 @@
     <ion-list>
       <button ion-item *ngFor="let person of people" (click)="goToDetailsPeople(person)">
         <ion-icon name="people" item-left></ion-icon>
-        {{person.name}}
+        <p>{{person.name}}</p>
       </button>
     </ion-list>
     </ion-card-content>
